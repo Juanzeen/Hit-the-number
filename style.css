@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(236, 234, 234);
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 15vh;
+    border-bottom: 1px solid #231942;
+}
+
+#ttl{
+    animation: switchcolor;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+main{
+   display: flex;
+   width: 50vw;
+   height: 70vh;
+   justify-content: space-around ;
+   align-items: center;
+   text-align: center;
+}
+
+main label {
+    font-size: 24px;
+}
+
+#form {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    font-style: italic;
+    justify-content: center;
+    align-items: center;
+}
+
+main input {
+    border: 1px solid #231942;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    border-radius: 10px;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    padding: 2px;
+}
+
+input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+main button {
+    border: 1px solid #231942;
+    background-color: rgb(22, 22, 22);
+    width: 50%;
+    border-radius: 10px;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    padding: 2px;
+}
+
+main button:hover{
+    border: 2px solid #2b1e50;
+    box-shadow: #2b1e50 0px 0px 12px 1px inset,
+                #2b1e50 0px 0px 12px 1px;
+    cursor: pointer;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-style: italic;
+    border-top: 1px solid #231942;
+}
+
+#creator{
+    animation: switchcolor;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+#year{
+    animation: switchcolor;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(22, 22, 22);
+    font-family: Poppins, sans-serif;
+}
+
+#feedback{
+    font-style: normal;
+}
+
+@keyframes switchcolor{
+
+    0%{
+        color: rgb(148, 0, 211);
+    }
+
+    14%{
+        color: rgb(75, 0, 130);
+    }
+
+    28%{
+        color: rgb(0, 0, 255);
+    }
+    42%{
+        color: rgb(0,255,0);
+    }
+
+    56%{
+        color: rgb(255,255,0);
+    }
+    70%{
+        color: rgb(255,127,0);
+    }
+    84%{
+        color: rgb(255,0,0);
+    }
+    100%{
+        color: rgb(148, 0, 211);
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+
+    main{
+        width: 80vw;
+    }
+}
+
+
+

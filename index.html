@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hit the Number!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container"> 
+        <header>
+            <h1 id="ttl">Hit the number!</h1>
+        </header>
+        
+        <main>
+              <div id="form">
+                  
+                  <label for="usernumber">Coloque um número de 1 a 1000</label> <br>
+                  <input type="number" name="usernumber" id="usernumber"  onsubmit="verify()" > <br>
+                  <button onclick="verify()">Checar</button> <br>
+                  <p id="feedback"></p>
+              </div>  
+              
+        </main>
+
+        <footer>
+            <p id="creator">@Juanzeen</p>
+            <p id="year">2023</p>
+        </footer>       
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
